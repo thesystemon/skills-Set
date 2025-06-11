@@ -456,3 +456,98 @@ Source Code Review involves manually analyzing application source code to detect
 7. Offer reviews for open-source or startup projects to gain experience
 
 ---
+
+## 🧠 Skill Set for Network Penetration Testing
+
+### 🎯 Goal: Simulate attacks on internal/external networks to uncover misconfigurations, vulnerabilities, and weak protocols.
+
+---
+
+### 1. **Fundamentals You Must Learn**
+
+| Area                  | Description                                                            |
+| --------------------- | ---------------------------------------------------------------------- |
+| **Networking Basics** | Understand TCP/IP, UDP, DNS, DHCP, ARP, ICMP, etc.                     |
+| **OSI Model**         | Know how data travels through 7 layers. Essential for packet analysis. |
+| **Common Protocols**  | HTTP, FTP, SSH, SMB, SNMP, RDP, LDAP, etc.                             |
+| **Ports & Services**  | Familiarity with common port numbers and service banners.              |
+
+---
+
+### 2. **Network Scanning & Mapping**
+
+| Tool                              | Purpose                                                                                    |
+| --------------------------------- | ------------------------------------------------------------------------------------------ |
+| 🔧 **Nmap**                       | Discover hosts, open ports, services. Learn service version detection & OS fingerprinting. |
+| 🔧 **Masscan**                    | Very fast port scanner. Use for large IP ranges.                                           |
+| 🔧 **Netdiscover** / **ARP-Scan** | Identify live hosts on a local network.                                                    |
+
+> 📚 Learn: Active vs Passive scanning, Network Topology Mapping
+
+---
+
+### 3. **Vulnerability Identification**
+
+| Tool                            | Use                                                |
+| ------------------------------- | -------------------------------------------------- |
+| 🔧 **Nessus** / **OpenVAS**     | Run vulnerability scans on hosts and services.     |
+| 🔧 **Nmap NSE Scripts**         | Enumerate misconfigurations, backdoors, CVEs.      |
+| 🔧 **Nikto** (for web services) | Identify outdated software, headers, config flaws. |
+
+> 📚 Learn: How to analyze CVEs, and map to vulnerabilities found.
+
+---
+
+### 4. **Network Exploitation**
+
+| Tool                      | Use                                                            |
+| ------------------------- | -------------------------------------------------------------- |
+| 💣 **Metasploit**         | Exploit known vulnerabilities in services.                     |
+| 💣 **Hydra** / **Medusa** | Brute-force attacks on FTP, SSH, SMB, RDP, etc.                |
+| 💣 **Responder**          | LLMNR/NBT-NS Poisoning on internal networks (AD environments). |
+| 💣 **CrackMapExec**       | Automate AD enumeration, password spraying, etc.               |
+
+> 📚 Learn: Exploitation techniques like SMB relay, privilege escalation, lateral movement.
+
+---
+
+### 5. **Post-Exploitation & Privilege Escalation**
+
+| What to Learn                      | Why                                                      |
+| ---------------------------------- | -------------------------------------------------------- |
+| Windows/Linux Privilege Escalation | For post-access escalation to admin/root                 |
+| Network Pivoting                   | Move across VLANs/subnets                                |
+| Credential Dumping                 | Extract passwords, hashes using Mimikatz, secretsdump.py |
+
+---
+
+### 6. **Reporting**
+
+| Skill                       | Importance                                       |
+| --------------------------- | ------------------------------------------------ |
+| 📄 CVSS Scoring             | For risk-based vulnerability assessment          |
+| 📊 Mapping to Standards     | OWASP, MITRE ATT\&CK, ISO 27001, CIS Controls    |
+| 🛠️ Remediation Suggestions | Write actionable and developer-friendly guidance |
+
+---
+
+### 🧪 Tools Summary
+
+* **Nmap, Masscan, Netdiscover**
+* **Nessus, OpenVAS**
+* **Metasploit, Hydra, Responder, CrackMapExec**
+* **Wireshark, Tcpdump** (for packet capture/analysis)
+
+---
+
+### 📚 Where to Learn
+
+| Platform                              | What to Study                                      |
+| ------------------------------------- | -------------------------------------------------- |
+| **TryHackMe (Network Security Room)** | Hands-on practice                                  |
+| **INE / Offensive Security**          | Advanced pentesting                                |
+| **TCM Security – PNPT Path**          | Practical Network Penetration Tester certification |
+| **Hack The Box**                      | Simulated network environments                     |
+| **YouTube – Network Chuck / STÖK**    | Visual learners will benefit                       |
+
+---
