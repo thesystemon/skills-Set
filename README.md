@@ -551,3 +551,220 @@ Source Code Review involves manually analyzing application source code to detect
 | **YouTube – Network Chuck / STÖK**    | Visual learners will benefit                       |
 
 ---
+
+## 🧠 Skill Set for Social Engineering Assessment
+
+### 🎯 Goal: Simulate human-targeted attacks (phishing, vishing, impersonation) to test employee awareness, security protocols, and organizational readiness.
+
+---
+
+### 1. **Core Knowledge Areas**
+
+| Area                             | Description                                                                    |
+| -------------------------------- | ------------------------------------------------------------------------------ |
+| **Psychology of Manipulation**   | Learn how attackers exploit trust, urgency, authority, and fear.               |
+| **Social Engineering Lifecycle** | Reconnaissance → Engagement → Exploitation → Exit strategy.                    |
+| **Attack Vectors**               | Phishing, vishing (voice), smishing (SMS), impersonation, baiting, tailgating. |
+| **Red Team vs Awareness Audit**  | Learn the difference: one exploits, one evaluates awareness.                   |
+
+---
+
+### 2. **Phishing Campaign Design**
+
+| Skill                     | Tools                                                      |
+| ------------------------- | ---------------------------------------------------------- |
+| Create Email Templates    | Use real-world lures (invoice, password reset, HR notice). |
+| Email Spoofing & Payloads | Use tools to simulate payloads (no real malware).          |
+| Tools to Learn            | 🔧 **GoPhish**, **King Phisher**, **PhishTool**            |
+
+> 📚 Learn: SPF/DKIM/DMARC bypass basics, phishing infrastructure setup (mail servers/domains).
+
+---
+
+### 3. **Vishing & Smishing**
+
+| Skill                  | Tools                                                                              |
+| ---------------------- | ---------------------------------------------------------------------------------- |
+| Create Voice Scenarios | HR call, IT support impersonation, helpdesk scams.                                 |
+| Call Spoofing Tools    | 🔧 **Phone spoofing apps**, VoIP softphones                                        |
+| SMS Phishing           | Craft fake delivery alerts, MFA messages using SMS APIs (Twilio for testing only). |
+
+> 📚 Learn: Legal limitations, ethical scripts, call recording practices.
+
+---
+
+### 4. **Physical Social Engineering (Advanced)**
+
+| Skill           | Techniques                                    |
+| --------------- | --------------------------------------------- |
+| Badge Cloning   | Using RFID readers (Proxmark3).               |
+| Tailgating      | Gaining access via employee follow-through.   |
+| Impersonation   | Dress as delivery guy, IT staff, etc.         |
+| Dumpster Diving | Searching for data in discarded docs/devices. |
+
+> ⚠️ Only attempt with written client permission. Practice via Red Team Labs.
+
+---
+
+### 5. **Reconnaissance**
+
+| Tools & Tactics                                                     | Purpose                                       |
+| ------------------------------------------------------------------- | --------------------------------------------- |
+| OSINT (Open Source Intelligence)                                    | Learn to gather names, emails, phone numbers. |
+| Tools: 🔍 **Maltego**, **Recon-ng**, **theHarvester**, **LinkedIn** | Map organizational structure.                 |
+
+> 📚 Learn: LinkedIn recon, email pattern discovery, breach data analysis (HaveIBeenPwned, etc.)
+
+---
+
+### 6. **Report Writing & Metrics**
+
+| Deliverables          | Includes                                                         |
+| --------------------- | ---------------------------------------------------------------- |
+| 📄 Engagement Summary | Overview of campaigns, methods used.                             |
+| 📊 Success Metrics    | Click-throughs, data entered, call duration, tailgate attempts.  |
+| 🛠️ Recommendations   | Awareness gaps, incident reporting improvements, training plans. |
+
+---
+
+### 🧪 Tools Summary
+
+* **GoPhish**, **King Phisher** – Email campaigns
+* **Maltego**, **theHarvester** – Recon
+* **SpoofCard**, **Twilio** – Voice & SMS spoofing (legal testing only)
+* **Proxmark3**, **RFIDler** – For physical access simulation (advanced)
+
+---
+
+### 📚 Where to Learn
+
+| Platform                                   | Topics                                 |
+| ------------------------------------------ | -------------------------------------- |
+| **TryHackMe – Phishing Room**              | Launch test phishing campaigns         |
+| **Hack The Box – OSINT Challenges**        | Practice recon                         |
+| **TCM Security Social Engineering Course** | End-to-end social engineering training |
+| **Red Team Village / DEFCON Talks**        | Real-world tactics by experts          |
+| **YouTube – John Hammond, STÖK**           | Walkthroughs and breakdowns            |
+
+---
+
+### ✅ Suggested Certifications
+
+| Name                                             | Provider                                      |
+| ------------------------------------------------ | --------------------------------------------- |
+| **SEPP (Social Engineering Penetration Tester)** | TCM Security                                  |
+| **OSINT Professional (OSINT-P)**                 | Open Source Intelligence                      |
+| **Red Team Ops**                                 | Zero-Point Security (includes social methods) |
+
+---
+
+
+## 🎓 Security Awareness & Training
+
+### 🎯 Goal: Educate employees and stakeholders to recognize, avoid, and report cyber threats—reducing human error as a vulnerability.
+
+---
+
+### 1. **Understanding Human Risk**
+
+| Area                              | Description                                                                                                                   |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Human Factor in Cybersecurity** | Learn how most breaches start with human mistakes like clicking phishing links, using weak passwords, or poor device hygiene. |
+| **Attack Vectors You Must Teach** | Phishing, vishing, smishing, password reuse, USB threats, social engineering, shoulder surfing, tailgating.                   |
+
+---
+
+### 2. **Designing Training Programs**
+
+| Skill                | Details                                                                                                                         |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Tailored Modules     | Customize for departments: Finance (invoice fraud), HR (data protection), IT (privilege misuse), General Staff (email hygiene). |
+| Microlearning Design | Short, focused lessons that keep attention (5–10 mins).                                                                         |
+| Interactive Elements | Quizzes, live demos, gamification, phishing simulations.                                                                        |
+| Awareness Campaigns  | Posters, email tips, monthly themes (e.g., “Think Before You Click”).                                                           |
+
+> 📚 Learn: Instructional design, adult learning psychology (ADDIE model), visual communication.
+
+---
+
+### 3. **Phishing Simulation Skills**
+
+| Skill           | Tools                                                                  |
+| --------------- | ---------------------------------------------------------------------- |
+| Run Campaigns   | Test real user behavior safely with simulated phishing emails.         |
+| Analyze Results | Measure click rates, data entry, and reporting rates.                  |
+| Tools           | 🔧 **GoPhish**, **KnowBe4 (partnered)**, **PhishTool**, **Infosec IQ** |
+
+> ⚠️ Always notify the client and get signed authorization.
+
+---
+
+### 4. **Topics to Cover in Awareness Sessions**
+
+| Key Topics                    | Format Ideas                                    |
+| ----------------------------- | ----------------------------------------------- |
+| Password Security & MFA       | Use real breach examples (LinkedIn, Dropbox).   |
+| Phishing & Social Engineering | Live demo of fake email links.                  |
+| Safe Browsing Practices       | Examples of malvertising and fake URLs.         |
+| Device Hygiene                | Mobile security, USB safety, and BYOD policies. |
+| Remote Work Security          | VPN, secure Wi-Fi, document handling.           |
+| Incident Reporting            | Teach them what, how, and when to report.       |
+
+> 🎥 Offer video training for hybrid or remote teams.
+
+---
+
+### 5. **Training Tools & LMS Integration**
+
+| Tool                                 | Purpose                                                             |
+| ------------------------------------ | ------------------------------------------------------------------- |
+| **LMS (Learning Management System)** | Deliver and track training progress (Moodle, TalentLMS, LearnDash). |
+| **Email Automation**                 | Send awareness tips monthly (Mailchimp, Brevo).                     |
+| **Video Tools**                      | Record live sessions or animated training (Loom, Vyond).            |
+
+---
+
+### 6. **Metrics to Track**
+
+| Metric              | What It Tells You                             |
+| ------------------- | --------------------------------------------- |
+| Participation Rate  | Are employees attending or ignoring training? |
+| Phishing Click Rate | How many users fall for simulated phishing?   |
+| Reporting Rate      | Do employees report suspicious activity?      |
+| Quiz Scores         | Do they retain what they’ve learned?          |
+
+> 📊 Create monthly dashboards for client review.
+
+---
+
+### 🛠 Suggested Tools
+
+* **GoPhish** – Phishing simulation
+* **Canva / Vyond** – Awareness posters or animated training
+* **Kahoot / Slido** – Live security quizzes
+* **Moodle / TalentLMS** – Host your own courses
+
+---
+
+### 📚 Where to Learn
+
+| Platform                                   | Focus                                             |
+| ------------------------------------------ | ------------------------------------------------- |
+| **Coursera – Security Awareness Training** | Basics of corporate awareness                     |
+| **TCM Security – Awareness Specialist**    | Practical phishing, vishing, and training methods |
+| **Pluralsight – Security Culture**         | Deep dive into human-based defense                |
+| **TryHackMe – Phishing Room**              | Practice simulations                              |
+
+---
+
+### ✅ Suggested Certifications
+
+| Cert                                                    | Provider       |
+| ------------------------------------------------------- | -------------- |
+| **Certified Security Awareness Practitioner (CSAP)**    | SANS Institute |
+| **Human Risk Management (HRM) Professional**            | KnowBe4        |
+| **Security+ (For foundation)**                          | CompTIA        |
+| **Certified Ethical Hacker (Optional for simulations)** | EC-Council     |
+
+---
+
