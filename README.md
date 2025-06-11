@@ -347,3 +347,112 @@ OWASP provides a **Mobile Security Testing Guide (MSTG)** and **MASVS** standard
 
 ---
 
+
+## 🧠 Source Code Review – Skill Set & Learning Path
+
+Source Code Review involves manually analyzing application source code to detect security flaws, logic errors, insecure patterns, and compliance issues **before they reach production**.
+
+---
+
+### 🔧 1. **Core Technical Skills**
+
+| Area                                       | What You Must Learn                                                                                                                                                           | Tools/Resources                                             |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| **Programming Languages**                  | Understand language-specific security issues: <br>➤ Java (Spring, JSP) <br>➤ Python (Django, Flask) <br>➤ PHP <br>➤ JavaScript (Node.js, Express) <br>➤ C/C++ (memory issues) | OWASP, Secure Coding Cheat Sheets, Secure Coding Guidelines |
+| **Secure Coding Principles**               | Input validation, error handling, authentication, authorization, secure storage, data flow                                                                                    | OWASP Top 10, SANS Top 25, SEI CERT                         |
+| **Common Vulnerabilities**                 | SQLi, XSS, SSRF, IDOR, Command Injection, Insecure Deserialization, Broken Access Control, Hardcoded secrets                                                                  | OWASP Code Review Guide                                     |
+| **Application Architecture Understanding** | MVC pattern, middleware, ORM, client-server logic                                                                                                                             | Real app repos on GitHub, developer documentation           |
+| **Version Control Analysis**               | Reviewing commits, change history, spotting leaked secrets                                                                                                                    | GitHub, GitLeaks, TruffleHog                                |
+
+---
+
+### 🛠️ 2. **Essential Tools for Code Review**
+
+| Tool                             | Usage                                                               |
+| -------------------------------- | ------------------------------------------------------------------- |
+| **SonarQube**                    | Static analysis for code quality and security                       |
+| **Semgrep**                      | Lightweight, customizable static analysis (supports many languages) |
+| **CodeQL**                       | GitHub’s semantic code analysis (query-based detection)             |
+| **Brakeman**                     | Ruby on Rails security scanner                                      |
+| **Bandit**                       | Python-specific security analysis                                   |
+| **TruffleHog / GitLeaks**        | Secret/key discovery in repositories                                |
+| **Visual Studio Code + Plugins** | Manual review, pattern highlighting                                 |
+| **FindSecBugs**                  | Static analysis for Java apps (integrates with SpotBugs)            |
+
+---
+
+### 🔍 3. **Key Areas of Focus (OWASP Code Review)**
+
+| Area                      | What to Look For                               |
+| ------------------------- | ---------------------------------------------- |
+| **Input Validation**      | Is user input filtered/sanitized properly?     |
+| **Authentication Logic**  | Are passwords hashed? Is 2FA enforced?         |
+| **Authorization Logic**   | Can users access other users' data? (IDOR)     |
+| **Error Handling**        | Are stack traces or debug logs exposed?        |
+| **Cryptography**          | Are proper encryption standards used?          |
+| **Session Management**    | Secure cookie flags, session expiration        |
+| **Business Logic**        | Can users bypass workflow or abuse logic?      |
+| **Hardcoded Secrets**     | API keys, tokens, passwords in code or configs |
+| **Third-Party Libraries** | Are outdated or vulnerable libraries used?     |
+
+---
+
+### 🧪 4. **Languages & Frameworks to Learn (Prioritize Based on Target)**
+
+| Language                           | Focus Area                                              |
+| ---------------------------------- | ------------------------------------------------------- |
+| **Java / Spring Boot**             | Secure controllers, filters, ORM mappings               |
+| **Python / Django / Flask**        | Template injection, SQLi, CSRF tokens                   |
+| **PHP / Laravel**                  | Input filtering, request validation, XSS                |
+| **JavaScript / Node.js / Express** | Async flows, insecure dependencies, prototype pollution |
+| **C/C++**                          | Memory safety: buffer overflows, pointer misuse         |
+| **.NET / ASP.NET**                 | Viewstate, request validation, insecure auth mechanisms |
+
+---
+
+### 🎓 5. **Practice Platforms & Resources**
+
+| Platform                                 | Description                                         |
+| ---------------------------------------- | --------------------------------------------------- |
+| **PentesterLab – Code Review Badge**     | Excellent for code analysis walkthroughs            |
+| **SecureFlag.io**                        | Labs for secure coding & review                     |
+| **OWASP Juice Shop (Source)**            | Practice code review + hacking                      |
+| **HackTheBox Academy – Code Review Lab** | Practical secure code analysis                      |
+| **VulnHub Apps**                         | Look into source of old vulnerable apps             |
+| **GitHub Open Source Projects**          | Audit known repositories (bug bounty programs help) |
+
+---
+
+### 📘 6. **Reporting & Documentation Skills**
+
+| Skill                         | Importance                                          |
+| ----------------------------- | --------------------------------------------------- |
+| **Clear Writeups**            | Report vulnerable code snippets with line numbers   |
+| **Risk Ratings**              | CVSS-based rating for each flaw                     |
+| **Remediation Guidance**      | Include secure code examples for each issue         |
+| **Developer Friendly Format** | Use inline comments or Git suggestions when allowed |
+
+---
+
+### ✅ 7. **Optional (Valuable) Certifications**
+
+| Cert                                 | Provider                             |
+| ------------------------------------ | ------------------------------------ |
+| eWPTX or eCRE                        | eLearnSecurity                       |
+| OSWE (Offensive Security Web Expert) | Offensive Security                   |
+| CRT – CREST Registered Tester        | CREST                                |
+| Secure Coding Certifications         | SANS SECURE, CSSLP (for secure SDLC) |
+
+---
+
+### 📚 8. **Suggested Learning Path (Step-by-Step)**
+
+1. Learn secure coding practices for 1–2 major languages (start with Java/Python)
+2. Study OWASP Top 10 & SANS Top 25 vulnerabilities
+3. Practice on vulnerable source codes (Juice Shop, DVWA)
+4. Learn how to use Semgrep, SonarQube, and manual analysis
+5. Join bug bounty programs (GitHub, HackerOne) for real-world exposure
+6. Create code audit reports with examples and fixes
+7. Offer reviews for open-source or startup projects to gain experience
+
+---
